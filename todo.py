@@ -1,4 +1,6 @@
+
 tasks = []
+
 while True:
     print("---TODO СПИСОК---")
     print("1. покказать задачи")
@@ -21,9 +23,9 @@ while True:
                 print(i, task)
     elif choice == 2:
 
-        task = input("введите задачу: ")
+        task = input("введите задачу ")
         if task == "":
-            print("задача пустая напиши что нибудь")
+            print("задача пустая напиши че нибудь")
         else:
             tasks.append(task)
             print("задача добавленна")
@@ -34,7 +36,7 @@ while True:
 
             for i, task in enumerate(tasks, start=1):
                 print(i, task)
-                num = int(input("введите задачи для ужаления"))
+                num = int(input("введите задачи джля ужалениЯ"))
 
                 if 0 < num <= len(tasks):
                     tasks.pop(num - 1)
@@ -44,10 +46,3 @@ while True:
         break
     else:
         print("неверный номер")
-
-
-
-
-
-
-
